@@ -1,7 +1,7 @@
-import 'package:angular2/platform/browser.dart';
-
-import 'package:erlantzoniga.com/view/app_component/app_component.dart';
+import 'package:angular/angular.dart';
+import 'package:erlantzoniga.com/view/app_component/app_component.template.dart'
+    as ng;
 
 main() {
-  bootstrap(AppComponent);
+  runApp(ng.AppComponentNgFactory);
 }
