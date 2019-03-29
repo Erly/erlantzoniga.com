@@ -5,15 +5,22 @@ import 'package:erlantzoniga.com/view/about_me/about_me.dart';
 
 @Component(
     selector: 'my-app',
-    styleUrls: const ['app_component.css'],
+    styleUrls: const [
+      'package:angular_components/app_layout/layout.scss.css',
+      'app_component.css'
+    ],
     templateUrl: 'app_component.html',
     directives: const [
-      MaterialTabComponent,
-      MaterialTabPanelComponent,
+      MaterialButtonComponent,
+      MaterialIconComponent,
       AboutMe,
     ],
     providers: const [
       materialProviders,
       ProfileService,
     ])
-class AppComponent {}
+class AppComponent {
+  void sayHello() {
+    print("hello");
+  }
+}

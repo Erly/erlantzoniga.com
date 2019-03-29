@@ -1,9 +1,24 @@
-<h1>Erlantz Oniga</h1>
-<material-tab-panel>
-    <material-tab label="About me">
+<material-content>
+    <header class="material-header">
+        <div class="material-header-row">
+            <material-button icon class="material-drawer-button" (trigger)="sayHello();">
+                <material-icon icon="menu"></material-icon>
+            </material-button>
+            <span class="material-header-title">Erlantz Oniga</span>
+            <div class="material-spacer"></div>
+            <material-button>About me</material-button>
+            <material-button>Contributions</material-button>
+        </div>
+    </header>
+    <div>
         <about-me></about-me>
-    </material-tab>
-    <material-tab label="Github">
-        <!--<github></github>-->
-    </material-tab>
-</material-tab-panel>
+    </div>
+</material-content>
+<!--<material-tab-panel>-->
+<!--    <material-tab label="About me">-->
+<!--        <about-me></about-me>-->
+<!--    </material-tab>-->
+<!--    <material-tab label="Github">-->
+<!--        &lt;!&ndash;<github></github>&ndash;&gt;-->
+<!--    </material-tab>-->
+<!--</material-tab-panel>-->
