@@ -1,0 +1,29 @@
+name: Build and deploy with Podman
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    name: Build and deploy
+    
+    runs-on: self-hosted
+
+    steps:
+      - name: 1. Clone repository
+        uses: actions/checkout@v4
+
+      - name: 2. Build image with Podman
+        run: |
+          podman build -t erlantzoniga.com .
+
+      - name: 3. Stop and remove old container (if exists)
+        run: |
+          podman stop erlantzoniga.com || true
+          podman rm erlantzoniga.com || true
+
+      - name: 4. Run the new container
+        run: |
+          podman run -d --name erlantzoniga.com -p 8080:80 erlantzoniga.com
