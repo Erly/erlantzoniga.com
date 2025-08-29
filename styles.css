@@ -1,0 +1,185 @@
+/* CSS Variables for Theming */
+:root {
+    --bg-color: #f5f7fa;
+    --text-color: #4a4a4a;
+    --card-bg-color: #ffffff;
+    --section-title-border: #3498db;
+    --job-header-bg: #ecf0f1;
+    --box-shadow-color: rgba(0, 0, 0, 0.08);
+    --box-shadow-hover-color: rgba(0, 0, 0, 0.12);
+    --hero-bg: #2c3e50;
+    --hero-subtitle: #bdc3c7;
+    --footer-bg: #2c3e50;
+    --tag-light-bg: #f5f5f5;
+    --tag-light-text: #4a4a4a;
+}
+
+body.dark-mode {
+    --bg-color: #1a202c;
+    --text-color: #e2e8f0;
+    --card-bg-color: #2d3748;
+    --section-title-border: #4299e1;
+    --job-header-bg: #4a5568;
+    --box-shadow-color: rgba(0, 0, 0, 0.4);
+    --box-shadow-hover-color: rgba(0, 0, 0, 0.6);
+    --hero-bg: #171923;
+    --hero-subtitle: #a0aec0;
+    --footer-bg: #171923;
+    --tag-light-bg: #4a5568;
+    --tag-light-text: #e2e8f0;
+}
+
+/* General Styles using Variables */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+.title, .subtitle {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+.hero.is-primary {
+    background-color: var(--hero-bg);
+    position: relative;
+}
+.hero .title {
+    color: #ffffff;
+}
+.hero .subtitle {
+    color: var(--hero-subtitle);
+}
+.section-title {
+    border-bottom: 2px solid var(--section-title-border);
+    padding-bottom: 10px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+.box, .card {
+    background-color: var(--card-bg-color);
+    box-shadow: 0 4px 12px var(--box-shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    height: 100%;
+}
+.box:hover, .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--box-shadow-hover-color);
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: #ffffff; /* Ensure all text inside is white */
+}
+.contact-item .icon {
+    margin-right: 10px;
+    color: #3498db;
+}
+.job-card {
+    margin-bottom: 1.5rem;
+}
+.job-card .card-header-title {
+    background-color: var(--job-header-bg);
+    color: var(--text-color);
+}
+.job-card .content p {
+    line-height: 1.6;
+}
+.tag.is-info {
+    background-color: #3498db;
+}
+.tag.is-light {
+    background-color: var(--tag-light-bg);
+    color: var(--tag-light-text);
+}
+.language-level {
+    margin-top: 1rem;
+}
+.footer {
+    background-color: var(--footer-bg);
+    color: #ffffff;
+}
+.footer a {
+    color: #3498db;
+}
+/* Gemini Feature Styles */
+.gemini-feature-box {
+    border-left: 4px solid #3498db;
+}
+.gemini-button {
+    background-color: #3498db;
+    border-color: transparent;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.gemini-button:hover {
+    background-color: #2980b9;
+    color: white;
+}
+.modal-card {
+    background-color: var(--card-bg-color);
+}
+.modal-card-head {
+    background-color: var(--job-header-bg);
+    border-bottom-color: var(--section-title-border);
+}
+.modal-card-title {
+    color: var(--text-color);
+}
+.modal-card-body .content {
+    white-space: pre-wrap;
+    max-height: 60vh;
+    overflow-y: auto;
+    color: var(--text-color);
+}
+#copy-button {
+    margin-top: 1rem;
+}
+.summary-box {
+    background-color: var(--card-bg-color);
+    border-radius: 6px;
+    padding: 1.5rem;
+}
+/* GitHub Projects Styles */
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+.project-card .card-content {
+    flex-grow: 1;
+}
+.project-card .card-footer {
+    border-top: 1px solid var(--job-header-bg);
+}
+.project-stats {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/* Controls Styles */
+.page-controls {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.language-selector .button, #theme-toggle {
+    margin-left: 5px;
+    font-weight: bold;
+}
+.language-selector .button.is-active {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+#theme-toggle {
+    background: #4a5568;
+    color: #f5f7fa;
+    border: none;
+}
+#cover-letter-generator {
+    display: none;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Erlantz Oniga Ouro</title>
+    <!-- Bulma CSS Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<section class="hero is-primary">
+    <div class="page-controls">
+        <div class="language-selector">
+            <button class="button is-light is-small" id="lang-es">ES</button>
+            <button class="button is-light is-small" id="lang-en">EN</button>
+        </div>
+        <button class="button is-small" id="theme-toggle">
+            <span class="icon"><i class="fas fa-moon"></i></span>
+        </button>
+    </div>
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column">
+                    <h1 class="title is-1" data-translate="fullName">
+                        Erlantz Oniga Ouro
+                    </h1>
+                    <h2 class="subtitle is-3" data-translate="jobTitle">
+                        DevOps Engineer & Backend Developer
+                    </h2>
+                </div>
+                <div class="column is-narrow has-text-left-tablet has-text-left-desktop">
+                    <div class="contact-info">
+                        <p class="contact-item">
+                            <span class="icon"><i class="fas fa-phone"></i></span>
+                            <span>(+34) 680 639 765</span>
+                        </p>
+                        <p class="contact-item">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <a href="mailto:erlantz8@gmail.com" class="has-text-white">erlantz8@gmail.com</a>
+                        </p>
+                        <p class="contact-item">
+                            <span class="icon"><i class="fab fa-linkedin"></i></span>
+                            <a href="https://es.linkedin.com/in/erlantzoniga" target="_blank" class="has-text-white">linkedin.com/in/erlantzoniga</a>
+                        </p>
+                        <p class="contact-item">
+                            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span data-translate="location">Bilbao, España</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container section" id="cv-content">
+
+    <!-- Professional Summary Section -->
+    <section class="mb-6">
+        <h2 class="title is-2 section-title" data-translate="summaryTitle">Resumen Profesional</h2>
+        <div class="box summary-box">
+            <div class="content">
+                <p data-translate="summaryContent">
+                    Ingeniero DevOps y Desarrollador Backend con más de 10 años de experiencia en el diseño, desarrollo y despliegue de soluciones de software escalables y de alto rendimiento. Experto en la automatización de infraestructuras en la nube (Azure), orquestación de contenedores (Kubernetes, AKS) y prácticas de CI/CD. Sólida trayectoria en el ecosistema de Big Data (Spark, Kafka) y en la creación de microservicios robustos con C# (.NET) y Java (Spring Boot).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="mb-6" id="work-experience">
+        <h2 class="title is-2 section-title" data-translate="experienceTitle">Experiencia Laboral</h2>
+
+        <div class="card job-card">
+            <header class="card-header">
+                <p class="card-header-title" data-translate="job1Title">DevOps Engineer</p>
+                <p class="card-header-icon">Plain Concepts</p>
+            </header>
+            <div class="card-content">
+                <div class="content">
+                    <p class="subtitle is-6" data-translate="job1Date">Enero 2021 - Actualidad | Bilbao, España</p>
+                    <p data-translate="job1Desc">
+                        Responsable del diseño de arquitecturas cloud en Azure, automatizando el despliegue de infraestructura como código con Terraform y gestionando pipelines de CI/CD en Azure DevOps. Desarrollo de microservicios y APIs REST con C#, e implementación de soluciones IoT. Especializado en la orquestación de contenedores con Kubernetes (AKS/Openshift) y el despliegue de aplicaciones mediante Helm.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card job-card">
+            <header class="card-header">
+                <p class="card-header-title" data-translate="job2Title">Big Data / Backend Developer</p>
+                <p class="card-header-icon">Ve Interactive / Ve Global</p>
+            </header>
+            <div class="card-content">
+                <div class="content">
+                    <p class="subtitle is-6" data-translate="job2Date">Enero 2015 - Enero 2021 | Bilbao, España</p>
+                    <p data-translate="job2Desc">
+                        Creación de un pipeline de procesamiento de datos a gran escala utilizando Apache Spark, Kafka y Storm para el procesamiento en tiempo real. Desarrollo de APIs contenerizadas de alto rendimiento con Java (Spring Boot) y .NET Core, y construcción de un ERP a medida. Automatización del aprovisionamiento y despliegue de software con herramientas como Puppet y Gradle.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card job-card">
+            <header class="card-header">
+                <p class="card-header-title" data-translate="job3Title">Software Developer</p>
+                <p class="card-header-icon">Connectis ICS Services</p>
+            </header>
+            <div class="card-content">
+                <div class="content">
+                    <p class="subtitle is-6" data-translate="job3Date">Septiembre 2012 - Enero 2015 | Bilbao, España</p>
+                    <p data-translate="job3Desc">
+                        Desarrollo de soluciones de gestión a medida, tanto para aplicaciones de escritorio como para plataformas web, utilizando principalmente el stack tecnológico de Microsoft (C#, ASP.NET, IIS, SQL Server) para satisfacer las necesidades de diversos clientes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- GitHub Projects Section -->
+    <section class="mb-6">
+        <h2 class="title is-2 section-title" data-translate="projectsTitle">Proyectos Destacados en GitHub</h2>
+        <div id="github-projects-container" class="columns is-multiline">
+            <div class="column is-full">
+                <p data-translate="projectsLoading">Cargando proyectos desde GitHub...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="mb-6">
+        <h2 class="title is-2 section-title" data-translate="educationTitle">Educación y Formación</h2>
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <h4 class="title is-4" data-translate="edu1Title">Bachelor of Science (Honours) in Computing</h4>
+                    <p class="subtitle is-6" data-translate="edu1School">University of Wales, Cardiff, Reino Unido</p>
+                    <p><span class="icon"><i class="fas fa-calendar-alt"></i></span> 2010 - 2012</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <h4 class="title is-4" data-translate="edu2Title">Técnico Superior en Desarrollo de Aplicaciones Informáticas</h4>
+                    <p class="subtitle is-6" data-translate="edu2School">C.F. Somorrostro, Muskiz, España</p>
+                    <p><span class="icon"><i class="fas fa-calendar-alt"></i></span> 2007 - 2009</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="mb-6">
+        <h2 class="title is-2 section-title" data-translate="skillsTitle">Idiomas y Otros Datos</h2>
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <h4 class="title is-4" data-translate="languagesTitle">Idiomas</h4>
+                    <p data-translate="motherTongues"><strong>Lenguas maternas:</strong> Español, Euskera</p>
+                    <div class="language-level">
+                        <p data-translate="englishLevel"><strong>Inglés:</strong> Usuario Independiente / Avanzado</p>
+                        <progress class="progress is-info" value="80" max="100">80%</progress>
+                        <div class="tags">
+                            <span class="tag is-light" data-translate="listening">Escucha: B2</span>
+                            <span class="tag is-light" data-translate="reading">Lectura: C1</span>
+                            <span class="tag is-light" data-translate="writing">Escritura: B2</span>
+                            <span class="tag is-light" data-translate="speaking">Producción Oral: B2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="box">
+                    <h4 class="title is-4" data-translate="licenseTitle">Permiso de Conducir</h4>
+                    <p><span class="icon"><i class="fas fa-car"></i></span> <span data-translate="licenseType">Permiso de tipo B</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gemini Cover Letter Feature -->
+    <section id="cover-letter-generator" class="mb-6">
+        <h2 class="title is-2 section-title" data-translate="assistantTitle">Asistente de Carta de Presentación</h2>
+        <div class="box gemini-feature-box">
+            <div class="field">
+                <label class="label" for="job-description" data-translate="assistantLabel">Pega aquí la descripción de una oferta de trabajo</label>
+                <div class="control">
+                    <textarea id="job-description" class="textarea" data-translate="assistantPlaceholder" placeholder="Ej: Buscamos un DevOps Engineer con experiencia en Azure, Kubernetes y Terraform..."></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <button class="button gemini-button is-fullwidth" id="generate-letter-button">
+                        <span data-translate="assistantButton">✨ Generar Carta de Presentación</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p data-translate="footerText">
+            Página generada con HTML y <a href="https://bulma.io">Bulma</a>.
+        </p>
+    </div>
+</footer>
+
+<!-- Modal for displaying Gemini results -->
+<div class="modal" id="gemini-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title" id="modal-title" data-translate="modalTitle">Resultado Generado</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <div class="content" id="modal-content">
+                <!-- Content will be injected here -->
+            </div>
+            <button class="button is-info" id="copy-button">
+                <span class="icon"><i class="fas fa-copy"></i></span>
+                <span data-translate="modalCopyButton">Copiar al portapapeles</span>
+            </button>
+        </section>
+    </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
