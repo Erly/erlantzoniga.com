@@ -1,0 +1,3 @@
+[Build]
+ImageTag=localhost/erlantzoniga.com:latest
+SetWorkingDirectory=unit
