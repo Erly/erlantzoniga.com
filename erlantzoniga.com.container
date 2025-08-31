@@ -1,0 +1,10 @@
+[Unit]
+Description=Erlantzoniga.com personal website
+
+[Container]
+Image=erlantzoniga.com.build
+PublishPort=8080:80
+AddHost=erlantzoniga.com:127.0.0.1
+
+[Install]
+WantedBy=multi-user.target
