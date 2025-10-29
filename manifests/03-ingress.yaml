@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: erlantz-cv
+  namespace: erlantz
   annotations:
     cert-manager.io/cluster-issuer: lets-encrypt
 spec:
@@ -17,3 +18,7 @@ spec:
                 name: erlantz-cv
                 port:
                   name: http
+  tls:
+    - hosts:
+        - www.erlantz.net
+      secretName: erlantz-cv-tls
