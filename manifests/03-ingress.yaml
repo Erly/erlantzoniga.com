@@ -3,13 +3,14 @@ kind: Ingress
 metadata:
   name: erlantz-cv
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    cert-manager.io/cluster-issuer: lets-encrypt
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   rules:
-    - http:
+    - host: www.erlantz.net
+      http:
         paths:
-          - path: /api
+          - path: /
             pathType: Prefix
             backend:
               service:
