@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: erlantz-cv
+  labels:
+    app: erlantz-cv
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: erlantz-cv
+  template:
+    metadata:
+      name: erlantz-cv
+      labels:
+        app: erlantz-cv
+    spec:
+      imagePullSecrets:
+        - name: regcred
+      containers:
+        - name: erlantz-cv
+          image: registry.erlantz.net/erlantz-cv:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+      restartPolicy: Always
+      
